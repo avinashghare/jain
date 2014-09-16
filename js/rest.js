@@ -49,6 +49,9 @@ var restservice = angular.module('restservice', [])
         book: function () {
             return $http.get(apiServer + "/book/find", {});
         },
+        video: function () {
+            return $http.get(apiServer + "/video/find", {});
+        },
         scheduler: function () {
             return $http.get(apiServer + "/scheduler/find", {});
         },
