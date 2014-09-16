@@ -1,0 +1,47 @@
+<ion-view title="Trial Vote Form">
+    <ion-content class="has-header">
+
+        <div class="list">
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Region
+                </div>
+                <select ng-model="vote.region">
+                    <option ng-repeat="val in getregion" value="{{val.id}}" selected>{{val.name}}</option>
+                </select>
+            </label>
+<!--
+            <label class="item item-input">
+                <span class="input-label">Polling Area</span>
+                <input type="text" ng-model="vote.pollingarea">
+            </label>
+-->
+            <label class="item item-input">
+                <span class="input-label">Polling Booth</span>
+                <input type="text" ng-model="vote.pollingcenter">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Name</span>
+                <input type="text" ng-model="vote.name">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Phone Number</span>
+                <input type="tel" ng-model="vote.phoneno">
+            </label>
+<!--
+            <label class="item item-input">
+                <span class="input-label">Area</span>
+                <input type="text" ng-model="vote.area">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Landmark/City</span>
+                <input type="text" ng-model="vote.city">
+            </label>
+-->
+        </div>
+        <div class="padding"><a href="#/app/vote" ng-click="insertvote(vote)"><button class="button button-block button-politics">Register</button></a></div>
+<!---->
+    </ion-content>
+</ion-view>
+
+

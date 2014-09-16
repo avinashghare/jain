@@ -1,0 +1,46 @@
+<ion-view title="Wall">
+    <ion-content class="has-header">
+        <ion-nav-buttons side="right">
+            <button class="button" ng-click="clearwall();">CLEAR</button>
+        </ion-nav-buttons>
+        <div class="list">
+
+            <div class="item item-text-wrap item-button-right" ng-repeat="wallsingle in walldata | unique:'id' | orderBy:orderby:true ">
+                <p ng-show="wallsingle.userdata=='Text'">{{wallsingle.title}}</p><a ng-show="wallsingle.userdata=='Text'" ng-click="sharetext(wallsingle.title)" class="button button-stable button-clear"><i class="icon ion-android-share"></i></a>
+
+                <p ng-show="wallsingle.userdata=='Image'">
+                    
+                        <img src="{{wallsingle.title|trusted}}" style="width:200px;">
+                    
+                </p><a ng-show="wallsingle.userdata=='Image'" ng-click="sharemedia(wallsingle.title)" class="button button-stable button-clear"><i class="icon ion-android-share"></i></a>
+				
+				<p ng-show="wallsingle.userdata=='Audio'" >
+                    
+                        <i class="icon ion-music-note"></i> Audio<audio  class="{{'audio'+wallsingle.id}}" >
+  <source src="{{wallsingle.title|trusted}}" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+                   
+                </p>
+				<a ng-show="(wallsingle.userdata=='Audio' && wallsingle.media!='stop')" style="right: 55px;" ng-click="playaudio('audio'+wallsingle.id,wallsingle.id)" class="button button-stable button-clear"><i class="icon ion-play"></i></a>
+				<a ng-show="(wallsingle.userdata=='Audio' && wallsingle.media=='stop')" style="right: 55px;" ng-click="stopaudio('audio'+wallsingle.id,wallsingle.id)" class="button button-stable button-clear"><i class="icon ion-ios7-pause"></i></a>
+				
+				<a ng-show="wallsingle.userdata=='Audio'" ng-click="sharemedia(wallsingle.title)" class="button button-stable button-clear"><i class="icon ion-android-share"></i></a>
+				
+				<p ng-show="wallsingle.userdata=='Video'">
+                    
+                        <video width="320" height="240" class="{{'video'+wallsingle.id}}">
+  <source src="{{wallsingle.title|trusted}}" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                    
+                </p>
+				<a ng-show="(wallsingle.userdata=='Video' && wallsingle.media!='stop')" style="right: 55px;"  ng-click="playvideo('video'+wallsingle.id,wallsingle.id)" class="button button-stable button-clear"><i class="icon ion-play"></i></a>
+				<a ng-show="(wallsingle.userdata=='Video' && wallsingle.media=='stop')" style="right: 55px;"  ng-click="stopvideo('video'+wallsingle.id,wallsingle.id)" class="button button-stable button-clear"><i class="icon ion-ios7-pause"></i></a>
+				<a ng-show="wallsingle.userdata=='Video'" ng-click="shareimage(wallsingle.title)" class="button button-stable button-clear"><i class="icon ion-android-share"></i></a>       
+            </div>
+        </div>
+        
+    </ion-content>
+
+</ion-view>

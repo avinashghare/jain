@@ -1,0 +1,22 @@
+<div class="modal">
+    <ion-header-bar class="bar bar-politics">
+        <h1 class="title politics">Register</h1> 
+    </ion-header-bar>
+    <ion-content>
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" ng-model="userinfo.username" placeholder="Name" required>
+                </label>
+                <label class="item item-input">
+                    <input type="tel" ng-model="userinfo.phoneno" placeholder="Phone Number" required>
+                </label>
+                <div class="item warning assertive alert text-center" ng-bind="alertnew" ng-hide="alertnew==''">
+                </div>
+                <label class="item">
+                    <a href="#/app/home" ng-click="insertuserinfo(userinfo)">
+                    <button type="submit" ng-click="closeLogin(userinfo)" class="button button-block button-politics">Register</button></a>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</div>

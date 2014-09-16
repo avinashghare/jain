@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="padding">
+        <h1 class="politics text-center" style="font-size:90px"><i class="icon ion-paperclip"></i></h1> 
+        <form action="http://emahapolitician.in/politician/index.php/upload/create" method="post" enctype="multipart/form-data">
+            <label class="item item-input">
+                <textarea placeholder="Share with us" name="text"></textarea>
+            </label>
+            <label for="file">Filename:</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <input type="submit" name="submit" value="Share" class="button button-block button-politics">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<ion-view title="Schedule">
+    
+<ion-content class="has-header">
+   
+    <ul class="list">
+        <li class="item" ng-repeat="val in getscheduler">
+            {{val.name}}
+            <span class="item-note">
+                {{val.timestamp}}
+            </span>
+        </li>
+    </ul>
+    
+</ion-content>
+</ion-view>

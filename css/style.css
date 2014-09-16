@@ -1,0 +1,134 @@
+/* Empty. Add your own CSS if you like */
+
+body {
+    color: #969696;
+}
+.item p {
+    color: #969696;
+}
+.item-select select {
+    color: #969696;
+}
+.input-label {
+    color: #969696;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #6d6d6d;
+}
+a {
+    text-decoration: none;
+}
+.bar.bar-politics {
+    border-color: #E07428;
+    background-color: #46A759;
+    background-image: linear-gradient(0deg, #46A759, #46A759 50%, transparent 50%);
+    color: #fff;
+}
+.bar.bar-politics .title {
+    color: white;
+}
+.bar-politics .button {
+    border-color: #46A759;
+    background-color: #46A759;
+    color: #fff;
+}
+.item-divider {
+    background-color: #FFEFD2;
+    color: #46A759;
+}
+.item-radio input:checked ~ .item-content {
+    background: #FFEFD2;
+    color: #46A759;
+}
+.item {
+    border-color: #FFEDD2;
+}
+.menu-item .item {
+    color: #aaa;
+}
+.politics {
+    color: #46A759;
+}
+.button.button-politics {
+    border-color: #E07428;
+    background-color: #46A759;
+    background-image: linear-gradient(0deg, #46A759, #46A759 50%, transparent 50%);
+    color: #fff;
+}
+.item-radio .radio-icon {
+    visibility: visible;
+    color: #ef4e3a;
+}
+.item-radio input:checked ~ .radio-icon {
+    color: #66cc33;
+}
+.vote-image {
+    width: 40px;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-right: 5px;
+    position: absolute;
+    right: 0;
+}
+.img-half {
+    width: 50%;
+    display: block;
+    margin: 0 auto 5px;
+}
+.grid a {
+    color: #46A759;
+    text-align: center;
+}
+.grid i {
+    font-size: 55px;
+    margin: 0 auto;
+    display: block;
+    color: #68BD4E;
+}
+.grid .col-33 {
+    height: 100px;
+    padding: 5px;
+}
+.grid p {
+    color: #898989;
+}
+.loader {
+    color:#898989 !important;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50%;
+}
+.loader i {
+    font-size: 40px;
+}
+.party p {
+    padding: 10px 15px;
+    text-align: justify;
+}
+.text-justify {
+    text-align: justify;
+}
+.mywall {
+    -webkit-animation: myfirst 2s linear 1s infinite alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 2s linear 1s infinite alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {color: red;}
+    to {color: #68BD4E;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {color: red;}
+    to {color: #68BD4E;}
+}
+.vote-text {
+    padding-left: 30px;
+}

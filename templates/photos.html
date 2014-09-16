@@ -1,0 +1,32 @@
+<ion-view title="Photo Gallery">
+    <ion-content class="has-header">
+            
+        <ion-slide-box show-pager="false" auto-play="false">
+<!--
+                <ion-slide>
+                    <img src="img/uploads/p1.jpg" class="full-image">
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/uploads/p2.jpg" class="full-image">
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/uploads/p3.jpg" class="full-image">
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/uploads/p4.jpg" class="full-image">
+                </ion-slide>
+-->
+<!--
+                <ion-slide>
+                    <img src="img/uploads/p5.jpg" class="full-image">
+                </ion-slide>
+-->
+<!--            {{getimage}}-->
+                <ion-slide ng-repeat="val in getimage">
+                    <img src="http://localhost/jain/jainbackend/politician/uploads/{{val.name}}" class="full-image">
+                </ion-slide>
+            </ion-slide-box>
+
+        </div>
+    </ion-content>
+</ion-view>

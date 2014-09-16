@@ -1,0 +1,29 @@
+<ion-view title="Vote">
+    <ion-content class="has-header">
+
+        <div class="list">
+           
+            <label class="item item-radio">
+            <input type="radio" name="group">
+            <div class="item-content">
+                <img src="img/cong.png" class="vote-image">
+                
+                <div class="vote-text">Balasaheb Thorat</div>
+            </div>
+                <i class="radio-icon ion-record balanced" style="left:0; top:-5px"></i>
+            </label>
+            
+           
+            
+           
+            
+        </div>
+        <div class="padding"><button class="button button-politics button-block" ng-click="playvoteaudio();">Vote</button></div>
+        <audio class="voteaudio" >
+            <source src="files/vote.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </ion-content>
+</ion-view>
+
+
