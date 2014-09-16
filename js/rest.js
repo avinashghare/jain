@@ -52,6 +52,9 @@ var restservice = angular.module('restservice', [])
         video: function () {
             return $http.get(apiServer + "/video/find", {});
         },
+        audio: function () {
+            return $http.get(apiServer + "/audionotification/find", {});
+        },
         scheduler: function () {
             return $http.get(apiServer + "/scheduler/find", {});
         },

@@ -16,6 +16,12 @@ var startercontrollers = angular.module('starter.controllers', ['restservice'])
     };
     RestService.video().success(video);
     
+    var audio = function (data, status) {
+        //console.log(data);
+        $scope.getaudio = data;
+    };
+    RestService.audio().success(audio);
+    
     var book = function (data, status) {
         //console.log(data);
         $scope.getbook = data;

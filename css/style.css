@@ -25,25 +25,25 @@ a {
 }
 .bar.bar-politics {
     border-color: #E07428;
-    background-color: #46A759;
-    background-image: linear-gradient(0deg, #46A759, #46A759 50%, transparent 50%);
+    background-color: #3BE654;
+    background-image: linear-gradient(0deg, #3BE654, #3BE654 50%, transparent 50%);
     color: #fff;
 }
 .bar.bar-politics .title {
     color: white;
 }
 .bar-politics .button {
-    border-color: #46A759;
-    background-color: #46A759;
+    border-color: #3BE654;
+    background-color: #3BE654;
     color: #fff;
 }
 .item-divider {
     background-color: #FFEFD2;
-    color: #46A759;
+    color: #3BE654;
 }
 .item-radio input:checked ~ .item-content {
     background: #FFEFD2;
-    color: #46A759;
+    color: #3BE654;
 }
 .item {
     border-color: #FFEDD2;
@@ -52,12 +52,12 @@ a {
     color: #aaa;
 }
 .politics {
-    color: #46A759;
+    color: #3BE654;
 }
 .button.button-politics {
     border-color: #E07428;
-    background-color: #46A759;
-    background-image: linear-gradient(0deg, #46A759, #46A759 50%, transparent 50%);
+    background-color: #3BE654;
+    background-image: linear-gradient(0deg, #3BE654, #3BE654 50%, transparent 50%);
     color: #fff;
 }
 .item-radio .radio-icon {
@@ -81,7 +81,7 @@ a {
     margin: 0 auto 5px;
 }
 .grid a {
-    color: #46A759;
+    color: #3BE654;
     text-align: center;
 }
 .grid i {
@@ -96,6 +96,9 @@ a {
 }
 .grid p {
     color: #898989;
+}
+.footercolor{
+    color: #68BD4E;
 }
 .loader {
     color:#898989 !important;
