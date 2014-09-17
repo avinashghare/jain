@@ -2,13 +2,16 @@
     <ion-content class="has-header">
         <div class="list">
             <div class="item padding"  ng-repeat="audio in getaudio">
-                <a href="{{audio.title}}"><p>{{audio.name}}</p></a>
-<!--
-                    <audio  class="" >
-                      <source src="http://localhost/jain/jainbackend/politician/uploads/Dj_Chetas_-_Break_Up_Mashup.mp3" type="audio/mpeg">
+<!--                <a href="{{audio.title}}"><p>{{audio.name}}</p></a>-->
+                   <i class="icon ion-music-note"></i>{{audio.name}}
+                     <audio  class="{{'audio'+audio.id}} audios">
+                      <source src="{{audio.title|trusted}}" type="audio/mpeg">
                     Your browser does not support the audio element.
                     </audio>
--->
+<a ng-show="(audio.userdata=='Audio' && audio.media!='stop')"  ng-click="playaudio('audio'+audio.id,$index)" class="button button-stable button-clear"><i class="icon ion-play"></i></a>
+				<a ng-show="(audio.userdata=='Audio' && audio.media=='stop')" ng-click="stopaudio('audio'+audio.id,audio.id)" class="button button-stable button-clear"><i class="icon ion-ios7-pause"></i></a>
+				
+<!--				<a ng-show="audio.userdata=='Audio'" ng-click="sharemedia(audio.title)" class="button button-stable button-clear"><i class="icon ion-android-share"></i></a>-->
             </div>
         </div>
     </ion-content>

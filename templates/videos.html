@@ -13,7 +13,7 @@ function AppCtrl($scope, $sce) {
             <div class="item padding"  ng-repeat="video in getvideo">
                 <p>{{video.title}}</p>
 <!--                <iframe style="overflow:hidden;width:100%;overflow:hidden;width:100%" width="100%" src="https://www.youtube.com/embed/b6ASHW4xvZw" frameborder="0" allowfullscreen></iframe>-->
-                <iframe style="overflow:hidden;width:100%;overflow:hidden;width:100%" width="100%" src="{{'//www.youtube.com/embed/'+video.video|trusted}}" frameborder="0" allowfullscreen></iframe>
+                <iframe style="overflow:hidden;width:100%;overflow:hidden;width:100%" width="100%" src="{{'http://www.youtube.com/embed/'+video.video|trusted}}" frameborder="0" allowfullscreen></iframe>
 <!--                <iframe width="640" height="390" src="//www.youtube.com/embed/h_yLSwPZNTo" frameborder="0" allowfullscreen></iframe>-->
             </div>
         </div>
@@ -23,3 +23,4 @@ function AppCtrl($scope, $sce) {
 <!--                <iframe style="overflow:hidden;width:100%;overflow:hidden;width:100%" width="100%" src="https://www.youtube.com/embed/b6ASHW4xvZw" frameborder="0" allowfullscreen></iframe>-->
 <!--                <iframe style="overflow:hidden;width:100%;overflow:hidden;width:100%" width="100%" src="http://www.youtube.com/embed/h_yLSwPZNTo" frameborder="0" allowfullscreen></iframe>-->
 <!--<iframe width="640" height="360" src="//www.youtube.com/embed/HgrLYXZvqys?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>-->
+<audio src=""></audio>

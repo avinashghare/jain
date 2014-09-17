@@ -295,7 +295,38 @@ var startercontrollers = angular.module('starter.controllers', ['restservice'])
 
 .controller('MembershipCtrl', function ($scope, $stateParams) {
 })
-.controller('AudioCtrl', function ($scope, $stateParams) {
+.controller('AudioCtrl', function ($scope, $stateParams, $location,RestService) {
+    $scope.walldata = [];
+    $scope.isrefresh = false;
+	$scope.orderby = 'id';
+    RestService.loadwall();
+	
+	function getwallindex(id) {
+		for(var i=0;i<$scope.walldata.length;i++)
+		{
+			if($scope.walldata[i].id==id)
+			return i;
+		}
+		
+	};
+	
+	$scope.playaudio=function(audioclass,index) {
+        console.log("play is clicked "+ audioclass+ " index "+index);
+        var audioslength=$(".audios").length;
+        for(var i=0;i<audioslength;i++)
+        {
+            $(".audios").get(i).pause();
+        }
+        $('.'+audioclass).get(0).play();
+	
+		
+	};
+	$scope.stopaudio=function(audioclass,index) {
+		index=getwallindex(index);
+		$('.'+audioclass).get(0).pause();
+		
+	};
+    
 })
 .controller('BookCtrl', function ($scope, $stateParams) {
 //   alert('book');
